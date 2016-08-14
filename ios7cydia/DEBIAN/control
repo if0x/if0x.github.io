@@ -1,0 +1,9 @@
+Package: net.if0xxx.ios7cydia
+Name: ios7cydia
+Version: 0.0.2
+Architecture: iphoneos-arm
+Description:  fix the legacy icon on iOS 9 or restore it. To start type ios7cydia in mobile Terminal
+Homepage: http://if0x.github.io
+Maintainer: @if0xxx <if0x2080@gmail.com>
+Author: @if0xxx <if0x2080@gmail.com>
+Section: Tweaks

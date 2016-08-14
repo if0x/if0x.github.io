@@ -1,0 +1,20 @@
+#!/bin/sh
+
+#  respringer.sh
+#
+echo "respringer version: 1.0"
+echo "how often respring?"
+read times
+i=1
+for ((i=0; i < "$times"; i++)) ;
+    do
+        uicache && kilall SpringBoard 
+        a=$[i+1]
+        echo "----------------$a----------------"
+        sleep 10s
+done
+
+echo "----------------done----------------"
+#
+#  Created by @if0xxx on 04.07.16.
+#

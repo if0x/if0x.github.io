@@ -1,0 +1,36 @@
+#!/bin/sh
+
+#  iOS7cydia.sh
+#
+echo "ios7cydia version: 0.0.2"
+echo "iOS7+ (type 1) or lagacy AppSwitcher Icon (type 2)?"
+read a
+if [ "$a" = "1" ]
+    then    mkdir -p /Applications/Cydia.app/IconBackup
+            mv /Applications/Cydia.app/icon-72.png /Applications/Cydia.app/IconBackup
+            mv /Applications/Cydia.app/icon-72@2x.png /Applications/Cydia.app/IconBackup
+            mv /Applications/Cydia.app/Icon-Small-50.png /Applications/Cydia.app/IconBackup
+            mv /Applications/Cydia.app/Icon-Small-50@2x.png /Applications/Cydia.app/IconBackup
+            mv /Applications/Cydia.app/Icon-Small.png /Applications/Cydia.app/IconBackup
+            mv /Applications/Cydia.app/Icon-Small@2x.png /Applications/Cydia.app/IconBackup
+            mv /Applications/Cydia.app/icon.png /Applications/Cydia.app/IconBackup
+            mv /Applications/Cydia.app/icon@2x.png /Applications/Cydia.app/IconBackup
+            mv /Applications/Cydia.app/iconClassic.png /Applications/Cydia.app/IconBackup
+            killall SpringBoard && uicache
+elif [ "$a" = "2" ]
+    then    mv /Applications/Cydia.app/IconBackup/icon-72.png /Applications/Cydia.app
+            mv /Applications/Cydia.app/IconBackup/icon-72@2x.png /Applications/Cydia.app
+            mv /Applications/Cydia.app/IconBackup/Icon-Small-50.png /Applications/Cydia.app
+            mv /Applications/Cydia.app/IconBackup/Icon-Small-50@2x.png /Applications/Cydia.app
+            mv /Applications/Cydia.app/IconBackup/Icon-Small.png /Applications/Cydia.app
+            mv /Applications/Cydia.app/IconBackup/Icon-Small@2x.png /Applications/Cydia.app
+            mv /Applications/Cydia.app/IconBackup/icon.png /Applications/Cydia.app
+            mv /Applications/Cydia.app/IconBackup/icon@2x.png /Applications/Cydia.app
+            mv /Applications/Cydia.app/IconBackup/iconClassic.png /Applications/Cydia.app
+            killall SpringBoard && uicache
+else
+    echo "wrong number"
+fi
+#
+#  Created by @if0xxx on 12.08.16.
+#
