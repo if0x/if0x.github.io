@@ -1,4 +1,4 @@
 .DS_Store
 packages.sh
 update.sh
-remote.sh
+remove.sh
