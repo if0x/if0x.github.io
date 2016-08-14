@@ -1,9 +1,0 @@
-Package: net.if0xxx.respringer
-Name: respringer
-Version: 1.0
-Architecture: iphoneos-arm
-Description: perform a bunch of resprings. T start type respringer in mobile terminal
-Homepage: http://if0x.github.io/
-Maintainer: @if0xxx <if0x2080@gmail.com>
-Author: @if0xxx <if0x2080@gmail.com>
-Section: Commandline
